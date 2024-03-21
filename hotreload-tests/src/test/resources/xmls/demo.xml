@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "https://eclipse.dev/jetty/configure_10_0.dtd">
+
+<Configure id="testWebapp" class="org.eclipse.jetty.ee10.webapp.WebAppContext">
+  <Set name="contextPath">/demo</Set>
+  <Set name="war"><Property name="jetty.base" default="." />/altapps/demo.war</Set>
+
+  <Set name="tempDirectory"><Property name="jetty.base"/>/foowork/demo-temp</Set>
+  <Set name="extractWAR">true</Set>
+  <Set name="tempDirectoryPersistent">false</Set>
+</Configure>

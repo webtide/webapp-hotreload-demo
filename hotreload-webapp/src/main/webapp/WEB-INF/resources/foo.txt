@@ -1,0 +1,2 @@
+This is the foo.txt, it has content.
+This content is not read.
